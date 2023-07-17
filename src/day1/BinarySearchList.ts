@@ -14,7 +14,7 @@ export default function bs_list(haystack: number[], needle: number): boolean {
         } else if (value > needle) {
             high = mid;
         }
-        // assumes needle>value , assign new low value which is the old midpoint+1
+        // assumes needle/target > value , assign new low value which is the old midpoint+1
         else {
             low = mid + 1;
         }
